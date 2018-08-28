@@ -4,12 +4,7 @@ package com.example;
  * This is a class.
  */
 public class Greeter {
-gfhjfghj
-gfhjfghjfgh
-java.beans.fghk
-fghkk
-gfhk
-fghkk
+
   /**
    * This is a constructor.
    */
