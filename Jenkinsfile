@@ -9,6 +9,7 @@ pipeline {
                 success {
                     echo 'Now Archiving... YAY!'
                     archiveArtifacts artifacts: '**/target/*.war'
+                    echo "I've archived all of this shit"
                 }
             }
         }
