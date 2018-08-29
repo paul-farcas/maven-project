@@ -24,7 +24,7 @@ stages{
         }
 
         stage ('Deployments'){
-            parallel{
+            stages{
                 stage ('Deploy to Staging'){
                     steps {
                         sh "scp -i C:\\tomcat.pem **/target/*.war ec2-user@${params.tomcat_dev}:/var/lib/tomcat/webapps"
