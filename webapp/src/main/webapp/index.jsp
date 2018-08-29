@@ -1,1 +1,1 @@
-Hello, World! Version DRY
+Hello, World! Version 7
