@@ -36,12 +36,7 @@ stages{
                         timeout(time:5, unit:'DAYS'){
                             input message:'Approve PRODUCTION Deployment?'
                         }
-                        sh "
-                        #!/bin/bash
-                        SUPERVAR=${RANDOM}
-                        echo ${SUPERVAR}
-                        sleep $((SUPERVAR/100))
-                        "
+                        sh "#!/bin/bash;SUPERVAR=${RANDOM};echo ${SUPERVAR};sleep $((SUPERVAR/100))"
                         sh "scp -i *.pem **/target/*.war ec2-user@${params.tomcat_prod}:/var/lib/tomcat/webapps"
                     }
                 }
