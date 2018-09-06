@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     parameters {
-         string(name: 'tomcat_dev', defaultValue: 'localhost:8090', description: 'Staging Server')
-         string(name: 'tomcat_prod', defaultValue: 'localhost:9090', description: 'Production Server')
+         string(name: 'tomcat_dev', defaultValue: '18.191.216.168', description: 'Staging Server')
+         string(name: 'tomcat_prod', defaultValue: '18.188.4.44', description: 'Production Server')
          string(name: 'myKey', defaultValue: "C:\\super.pem", description: 'Staging Server SSH Key')
     }
 
